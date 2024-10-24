@@ -7,9 +7,7 @@ This repository is dedicated to my study and practice of Laravel. Each branch in
 
 - **main**: The main branch containing the initial setup and basic configurations.
 - **crud**: This branch includes the project where I learned CRUD (Create, Read, Update, Delete) operations using Laravel's structure.
-- **auth**: Contains the project where I implemented authentication and authorization.
-- **api**: Focuses on building and consuming APIs with Laravel.
-- **testing**: Covers the testing methodologies and tools available in Laravel.
+
 
 Feel free to explore each branch to see the specific implementations and learnings.
 
