@@ -1,5 +1,5 @@
-
-# Laravel CRUD Study Project
+﻿
+# Laravel Study
 
 This repository is dedicated to my study and practice of Laravel. Each branch in this repository represents a different part of my learning journey with Laravel. Below is a summary to help navigate through the branches.
 
