@@ -31,7 +31,7 @@
     - descrição
     - data de criação
     - data de conclusão
-    - status
+    - concluido
     - categoria_id
     - user_id
 

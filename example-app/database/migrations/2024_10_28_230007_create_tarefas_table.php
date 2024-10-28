@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('tarefas', function (Blueprint $table) {
             $table->id();
+            $table->string('titulo');
+            $table->string('descricao');
+            $table->boolean('concluido')->default(false);
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('categoria_id');
             $table->timestamps();
         });
     }
