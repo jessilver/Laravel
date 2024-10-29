@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('titulo');
             $table->string('descricao');
             $table->boolean('concluido')->default(false);
+            $table->date('prazo');
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('categoria_id');
             $table->timestamps();

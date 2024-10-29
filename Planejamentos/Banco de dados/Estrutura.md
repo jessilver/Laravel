@@ -9,16 +9,16 @@
 ## Relacionamentos:
 
 - ### Usuário x Tarefas:
-    - Um usuário pode ter várias tarefas (1-N)
-    - Uma tarefa pertence a um único usuário (1-1)
+    - Um usuário pode ter várias tarefas (1-N) ok
+    - Uma tarefa pertence a um único usuário (1-1) ok
 
 - ### Trefas x Categorias:
-    - Uma categoria pode ter várias tarefas (1-N)
-    - Uma tarefa pertence a uma única categorias (1-1)
+    - Uma categoria pode ter várias tarefas (1-N) ok
+    - Uma tarefa pertence a uma única categorias (1-1) ok
 
 - ### Usuário x Categorias:
-    - Um usuário pode ter várias categorias (1-N)
-    - Uma categoria pertence a um único usuário (1-1)
+    - Um usuário pode ter várias categorias (1-N) ok
+    - Uma categoria pertence a um único usuário (1-1) ok
 
 ## Detalhamento das entidades:
 
