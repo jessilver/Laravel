@@ -17,6 +17,7 @@ Feel free to explore each branch to see the specific implementations and learnin
 - [Main](https://github.com/jessilver/Laravel/)
 - [Crud](https://github.com/jessilver/Laravel/tree/Crud)
 - [Relations](https://github.com/jessilver/Laravel/tree/Relations)
+- Task-Project
 
 
 Happy coding!

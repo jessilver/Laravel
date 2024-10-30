@@ -25,32 +25,13 @@ class DatabaseSeeder extends Seeder
         //     TarefaSeeder::class
         // ]);
 
-        User::factory(2)->create();
-
-        $users = User::all();
-
-        foreach($users as $user){
-            Categoria::factory(2)->create([
-                'user_id' => $user->id,
-            ]);
-        }
-
-
-        foreach($users as $user){
-            $categorias = Categoria::select()->where('user_id', $user->id)->get();
-            foreach($categorias as $categoria){
-                Tarefa::factory(5)->create([
-                    'user_id' => $user->id,
-                    'categoria_id' => $categoria->id
-                ]);
-            }
-        }
-
-
+        User::factory(200)->create();
+        Categoria::factory(500)->create();
+        Tarefa::factory(100)->create();
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
-        //     'email' => 'testYYYYYYYYYYYYYY@example.com',
+        //     'email' => 'test@example.com',
         // ]);
 
 

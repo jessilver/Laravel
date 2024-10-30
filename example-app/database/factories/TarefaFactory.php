@@ -2,6 +2,8 @@
 
 namespace Database\Factories;
 
+use App\Models\Categoria;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -16,13 +18,22 @@ class TarefaFactory extends Factory
      */
     public function definition()
     {
+
+        // $user = User::all()->random();
+
+        // while (count($user->categorias) == 0){
+        //     $user = User::all()->random();
+        // }
+
+        $user = User::has('categorias')->inRandomOrder()->first();
+
         return [
             'titulo' => $this->faker->text(10),
             'descricao' => $this->faker->text(50),
             'concluido' => false,
-            'prazo' => now(),
-            'user_id' => 1,
-            'categoria_id' => 1
+            'prazo' => $this->faker->dateTime(),
+            'user_id' => $user,
+            'categoria_id' => $user->categorias->random()
         ];
     }
 }
