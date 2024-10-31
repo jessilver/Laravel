@@ -20,4 +20,8 @@ class testController extends Controller
         return $contex;
 
     }
+
+    public function home(){
+        return view('layouts/index');
+    }
 }
