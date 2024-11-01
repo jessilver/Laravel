@@ -12,7 +12,7 @@
     {{-- -- --}}
 
     <link rel="stylesheet" href="/assets/css/style.css">
-    <title>Tasks</title>
+    <title>{{$page ?? 'To-Do'}}</title>
 </head>
 <body>
 
@@ -29,19 +29,7 @@
                 </a>
             </nav>
             <main class="main-content">
-                <section class="graph">
-                    <div class="graph-header">
-                        <h2>Progresso do dia</h2>
-                        <hr>
-                        data
-                    </div>
-                    <div class="graph-header-subtitle">
-                        Tarefas <b>3/6</b>
-                    </div>
-                </section>
-                <section class="list">
-                    Lista
-                </section>
+                {{$slot}}
             </main>
         </div>
     </div>

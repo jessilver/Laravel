@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[testController::class, 'index']);
 Route::get('/home',[testController::class, 'home']);
+Route::get('/login',[testController::class, 'login']);

@@ -25,9 +25,9 @@ class DatabaseSeeder extends Seeder
         //     TarefaSeeder::class
         // ]);
 
-        User::factory(200)->create();
-        Categoria::factory(500)->create();
-        Tarefa::factory(100)->create();
+        User::factory(10)->create();
+        Categoria::factory(10)->create();
+        Tarefa::factory(10)->create();
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
