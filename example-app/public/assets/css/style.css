@@ -15,9 +15,9 @@
 }
 
 body {
-    width: 100dvw;
     height: 100dvh;
     background-color: var(--background-white);
+    overflow: hidden;
 }
 /* Elements */
 
@@ -47,7 +47,7 @@ body {
 
 .page-sidebar{
     width: 100px;
-    height: 100%;
+    height: 100dvh;
     background-color: var(--color-primary);
 }
 
@@ -92,7 +92,12 @@ section.list{
     /* background-color: aquamarine; */
 }
 
-.graph-header h2{
+.task-item{
+    width: 100%;
+
+}
+
+.graph-header h3{
     display: inline-block;
 }
 
@@ -128,7 +133,9 @@ section.list{
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-height: 100%;
     margin-top: 20px;
+    overflow-y: auto;
 }
 
 .task{
@@ -140,7 +147,8 @@ section.list{
     margin: 10px 0;
 }
 hr {
-    border-color: rgb(250, 250, 250) !important;
+    margin: auto 0 !important;
+    border-color: rgb(96, 96, 96) !important;
 }
 .task:hover{
     background-color: var(--background-light);
@@ -195,4 +203,11 @@ hr {
 
 .modal-footer{
     justify-content: center !important;
+}
+
+
+/* Tasks */
+
+#create-task-section{
+    margin: 0 auto;
 }

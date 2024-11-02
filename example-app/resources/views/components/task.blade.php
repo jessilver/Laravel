@@ -1,13 +1,13 @@
 <div class="task">
-    <div class="title">
-        <input type="checkbox" name="task" id="check-id"
+    <div class="title form-check">
+        <input type="checkbox" class="form-check-input" name="task" id="check-id-{{$data['id'] ?? ''}}"
 
         @if ($data && $data['done'])
             checked
         @endif
 
         >
-        <label for="check-id">{{$data['title'] ?? ''}}</label>
+        <label for="check-id-{{$data['id'] ?? ''}}">{{$data['title'] ?? ''}}</label>
     </div>
     <div class="priority">
         <div class="sphere">
@@ -16,8 +16,8 @@
         <label>{{$data['category']}}</label>
     </div>
     <div class="actions">
-        <a href="{{$data['edit_url'] ?? '#'}}/{{$data['id'] ?? ''}}" data-bs-toggle="modal" data-bs-target="#EditModal"> Editar </a>
-        <a href="{{$data['delete_url'] ?? '#'}}/{{$data['id'] ?? ''}}" data-bs-toggle="modal" data-bs-target="#DeleteModal"> Deletar </a>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#EditModal"> Editar </a>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#DeleteModal"> Deletar </a>
     </div>
 </div>
 <hr>
