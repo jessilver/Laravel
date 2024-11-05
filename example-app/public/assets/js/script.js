@@ -37,13 +37,13 @@ function confirm_create_task(formid,inputIds){
             cancelButtonText: 'Cancelar'
         }).then((result) => {
             if (result.isConfirmed) {
-                // document.getElementById(formid).submit();
                 Swal.fire({
                     title: 'Task criada com seucesso!',
                     text: 'Sua task foi criada sem erros, você ja pode visuala-la.',
                     icon: 'success'
                 }).then(() => {
-                    window.location.reload();
+                    document.getElementById(formid).submit();
+                    // window.location.reload();
                 });
             }
         });
