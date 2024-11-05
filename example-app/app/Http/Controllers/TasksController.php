@@ -14,13 +14,18 @@ class TasksController extends Controller
     }
 
     public function create(Request $r){ // post
-        $task = $r->only(['titulo','categoria_id','prazo','descricao']);
-        dd($task);
-        $task['user_id']='1';
-        User::create
+        $r['user_id']='1';
+        $task = $r->only(['titulo','categoria_id','prazo','descricao','user_id']);
+        // dd([$task,$r->all()]);
+        $dbTask = new Tarefa();
+        $dbTask->titulo = $task['titulo'];
+        $dbTask->categoria_id = $task['categoria_id'];
+        $dbTask->prazo = $task['prazo'];
+        $dbTask->descricao = $task['descricao'];
+        $dbTask->user_id = $task['user_id'];
+        $dbTask->save();
 
-        $dbTask = Tarefa::create($task);
-        return $dbTask;
+        dd ($dbTask);
     }
 
     public function edit(Request $r, $id){ // post
