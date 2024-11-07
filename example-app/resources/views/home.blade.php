@@ -31,22 +31,6 @@
         </div>
         <div class="task-list">
 
-            @php
-                $tasks = [
-                    [ 'id' => 1, 'done' => false, 'date' => '2021-03-01', 'title' => 'minha primeira task', 'category' => '1', 'delete_url' => '#1', 'edit_url' => '#1', 'desc' => 'descrição task 01'],
-                    [ 'id' => 2, 'done' =>  true, 'date' => '2020-02-05', 'title' => 'minha segunda task' , 'category' => '2', 'delete_url' => '#2', 'edit_url' => '#2', 'desc' => 'descrição task 02'],
-                    [ 'id' => 3, 'done' => false, 'date' => '2022-05-21', 'title' => 'minha terceira task', 'category' => '3', 'delete_url' => '#3', 'edit_url' => '#3', 'desc' => 'descrição task 03'],
-                    [ 'id' => 4, 'done' =>  true, 'date' => '2020-06-03', 'title' => 'minha quarta task'  , 'category' => '4', 'delete_url' => '#4', 'edit_url' => '#4', 'desc' => 'descrição task 04'],
-                    [ 'id' => 5, 'done' => false, 'date' => '2024-07-10', 'title' => 'minha quinta task'  , 'category' => '5', 'delete_url' => '#5', 'edit_url' => '#5', 'desc' => 'descrição task 05'],
-                    [ 'id' => 6, 'done' => false, 'date' => '2020-09-20', 'title' => 'minha terceira task', 'category' => '6', 'delete_url' => '#3', 'edit_url' => '#3', 'desc' => 'descrição task 06'],
-                    [ 'id' => 7, 'done' =>  true, 'date' => '2018-04-20', 'title' => 'minha quarta task'  , 'category' => '7', 'delete_url' => '#4', 'edit_url' => '#4', 'desc' => 'descrição task 07'],
-                    [ 'id' => 8, 'done' => false, 'date' => '2020-08-05', 'title' => 'minha quinta task'  , 'category' => '8', 'delete_url' => '#5', 'edit_url' => '#5', 'desc' => 'descrição task 08'],
-                    [ 'id' => 9, 'done' => false, 'date' => '2019-03-23', 'title' => 'minha terceira task', 'category' => '9', 'delete_url' => '#3', 'edit_url' => '#3', 'desc' => 'descrição task 09'],
-                    [ 'id' => 10, 'done' =>  true, 'date' => '2023-12-10', 'title' => 'minha quarta task'  , 'category' => '10', 'delete_url' => '#4', 'edit_url' => '#4', 'desc' => 'descrição task 10'],
-                    [ 'id' => 11, 'done' => false, 'date' => '2025-11-20', 'title' => 'minha quinta task'  , 'category' => '1', 'delete_url' => '#5', 'edit_url' => '#5', 'desc' => 'descrição task 11'],
-                ];
-            @endphp
-
             @foreach ($tasks as $task)
             <div class="task-item">
                 <x-task :data=$task  :categories=$categories />

@@ -211,3 +211,17 @@ hr {
 #create-task-section{
     margin: 0 auto;
 }
+
+/* REGISTER */
+
+#register_form{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#register_form button{
+    flex: 1;
+    margin: 0 auto;
+}

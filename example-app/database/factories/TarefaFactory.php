@@ -30,8 +30,8 @@ class TarefaFactory extends Factory
         return [
             'titulo' => $this->faker->text(10),
             'descricao' => $this->faker->text(50),
-            'concluido' => false,
-            'prazo' => $this->faker->dateTime(),
+            'concluido' => $this->faker->boolean,
+            'prazo' => $this->faker->dateTime,
             'user_id' => $user,
             'categoria_id' => $user->categorias->random()
         ];

@@ -21,11 +21,13 @@ Route::get('/',[HomeController::class, 'home'])->name('home.page');
 
 // Auth \\
 Route::get('/login',[AuthController::class, 'login'])->name('auth.login'); // view = auth/login
-Route::get('/register',[AuthController::class, 'register'])->name('auth.register'); // view = auth/login
+
+Route::get('/register',[AuthController::class, 'register'])->name('auth.register'); // view = auth/register
+Route::post('/register', [AuthController::class, 'register_action'])->name('auth.register_action');
 
 
 // Task \\
 Route::post('/task/new', [TasksController::class, 'create'])->name('task.crate');
-Route::post('/task/edit/{id}', [TasksController::class, 'edit'])->name('task.edit');
+Route::post('/task/edit', [TasksController::class, 'edit'])->name('task.edit');
 Route::post('/task/delete/{id}', [TasksController::class, 'delete'])->name('task.delete');
 
